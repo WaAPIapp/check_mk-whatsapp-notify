@@ -53,7 +53,7 @@ cd ~/local/share/check_mk/notifications/
 
 Download the WhatsApp notify script from Git repository
 ```
-git clone https://github.com/welligtonalves/check_mk-whatsapp-notify .
+git clone https://github.com/WaAPIapp/check_mk-whatsapp-notify.git .
 ```
 
 Give the script execution permissions
@@ -69,17 +69,12 @@ Now you can create your own alarm rules in Check_MK.
 
 First create a clone of your existing mail notification rule
 
-<img src="images/global_notification_rules_create_v2.png" alt="Create clone" width="100%"/>
-
 * Change the description (e.g. Notify all contacts of a host/service via WhatsApp)
 * The notification method is "Push Notification (by WhatsApp)"
 * Select option "Call with the following parameters:"
-* As the first parameter we set the WhatsApp line (API number provided)
-* The second parameter is the WhatsApp destiny WhatsApp line / Group-ID
-* The third parameter is the api port WhatsApp
-* The fourth parameter is the api key WhatsApp
-
-<img src="images/create_new_notification_rule_for_whatsapp.png" alt="Adjust settings" width="100%"/>
+* As the first parameter we set the WaAPI Instance ID
+* The second parameter is the WhatsApp destiny ChatId Group-ID i.e. <xxx>@c.us or <xxx>@g.us
+* The third parameter is the api token from WaAPI
 
 <br>
 
