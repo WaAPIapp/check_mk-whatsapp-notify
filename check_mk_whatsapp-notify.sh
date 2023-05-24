@@ -3,7 +3,7 @@
 #
 # Script Name   : check_mk_whatsapp-notify.sh
 # Description   : Send Check_MK notifications by WhatsApp
-# Author        : Welligton Analista Linux4Life
+# Author        : Welligton Analista Linux4Life adapted by waapi.app
 # License       : BSD 3-Clause "New" or "Revised" License
 # ======================================================================================
 
@@ -40,16 +40,16 @@ else
 fi
 case "${STATE}" in
     OK|UP)
-        EMOJI=$'\u2705' 
+        EMOJI=$'\u2705'
         ;;
     WARN)
-        EMOJI=$'\u26A0\uFE0F' 
+        EMOJI=$'\u26A0\uFE0F'
         ;;
     CRIT|DOWN)
-        EMOJI=$'\u274C' 
+        EMOJI=$'\u274C'
         ;;
     UNKN)
-        EMOJI=$'U+1F612' 
+        EMOJI=$'U+1F612'
 esac
 
 # Create a MESSAGE variable to send to your WhatsApp
