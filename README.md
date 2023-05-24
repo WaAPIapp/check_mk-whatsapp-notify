@@ -73,7 +73,7 @@ First create a clone of your existing mail notification rule
 * The notification method is "Push Notification (by WhatsApp)"
 * Select option "Call with the following parameters:"
 * As the first parameter we set the WaAPI Instance ID i.e. ```123```
-* The second parameter is the WhatsApp destiny ChatId Group-ID i.e. ```<xxx>@c.us``` or ```<xxx>@g.us```
+* The second parameter is the WhatsApp destiny ChatId i.e. ```<xxx>@c.us``` or ```<xxx>@g.us```
 * The third parameter is the api token from WaAPI ```abc123mytokenxyz789```
 
 <br>
